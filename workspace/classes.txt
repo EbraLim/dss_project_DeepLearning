@@ -1,3 +1,0 @@
-pedestrian
-person on bike
-bike
