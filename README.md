@@ -11,7 +11,7 @@ Real-time Object Detection in bird's eye view
 
 ## 1. 소개
 ### 1) 주제
-* 항공뷰에서의 object detection (+ tracking)
+* 항공뷰에서의 multi-object detection and tracking
 ### 2) 기획의도
 * 항공뷰에서는 지상 높이에서 파악하기 힘든 object features를 파악할 수 있을 것이라고 예상
 * 성능이 뒷받침된다면, 다른 각도의 시선과 넓은 영역에 걸친 detection을 통해 지상에서와는 또다른 부가가치 창출이 가능할 것이라고 생각하였음
@@ -22,8 +22,9 @@ Real-time Object Detection in bird's eye view
   (ex. 군사적 목적)
 * 기타 광범위한 영역에 걸친 특징을 파악해야 하는 분야  
   (ex. 건설업)
-### 4) 사용한 알고리즘 및 Tool
-* 알고리즘: Yolo v3
+### 4) 사용한 라이브러리, 알고리즘 및 Tool
+* 라이브러리: tensorflow-gpu 2.3.0
+* 알고리즘: Yolo v3, v4, SORT
 * Tool: Google Colaboratory, LabelImg, Iriun
 ----
 
@@ -78,7 +79,7 @@ Real-time Object Detection in bird's eye view
 #### 1) [임현수](https://github.com/EbraLim/)
 * 작성예정
 #### 2) [정민주](https://github.com/meiren13/)
-* 작성예정
-----
-
+* 작성예정  
+----  
+참고: (유튜버 깃헙 주소들 남기기)
 본 프로젝트는 패스트캠퍼스 데이터사이언스 취업스쿨 16th 딥러닝 프로젝트로 진행되었습니다.
