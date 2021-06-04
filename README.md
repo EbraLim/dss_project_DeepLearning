@@ -109,8 +109,7 @@
 ![스크린샷 2021-06-04 오후 3 28 27](https://user-images.githubusercontent.com/78459305/120755891-846db980-c549-11eb-93fa-06a9d8631f94.png)\
 ![1차](https://user-images.githubusercontent.com/78459305/120755270-b7637d80-c548-11eb-84d8-c4405177471c.gif)\
 [(1차 결과물 원본 영상 링크)](https://www.youtube.com/watch?v=DlXwcVXY82g&ab_channel=%EC%9E%84%ED%98%84%EC%88%98%EC%9E%84%ED%98%84%EC%88%98)  
-\
-※ 가게 상호명들은 추후 문제 발생을 방지하기 위해 
+※ 가게 상호명들은 추후 문제 발생을 방지하기 위해 모자이크하였음
 
 #### (2) YOLO v3 - 메인
 * YOLO 정상 작동 여부 확인 완료, 본격적인 테스트
