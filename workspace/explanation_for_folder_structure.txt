@@ -1,0 +1,49 @@
+```````````````````````````````````````````````````
+Trial 별로 폴더가 구분되어 있으며, 총 3개의 폴더로 이루어져 있다.
+(yolo_v3, yolo_v4, etc)
+```````````````````````````````````````````````````
+
+# 1. yolo_v3
+  - 2개의 폴더 (Trial_1과 Trial_2)와 1개의 .py 파일('yolov3_detection.py')로 이루어져 있다.
+
+  - Trial_1과 Trial_2 각 폴더에는 아래와 같이 5개의 파일이 있다.
+      - class 정보가 있는 텍스트 파일
+      - cfg 파일
+      - Google Colab으로 훈련시켰던 ipynb 파일
+      - 결과 영상 유튜브 링크가 있는 텍스트 파일
+      - weights 파일 다운로드 링크가 있는 텍스트 파일
+
+  - 'yolov3_detection.py'는 Trial_1과 Trial_2 모두에 활용하는 코드이며, 훈련을 마친 후 detection을 위해 test를 진행하는 코드이다.
+
+
+
+# 2. yolo_4
+  - 3개의 폴더 (Trial_3과 Trial_4, 'yolov4_detection_deepsort')로 이루어져 있다.
+
+  - Trial_3 폴더에는 총 6개의 파일이 있다.
+      - class 정보가 있는 텍스트 파일
+      - cfg 파일
+      - Google Colab으로 훈련시켰던 ipynb 파일
+      - Google Colab으로 Detection했던 ipynb 파일
+      - 결과 영상 유튜브 링크가 있는 텍스트 파일 
+      - weights 파일 다운로드 링크가 있는 텍스트 파일
+
+  - Trial_4 폴더에는 총 2개의 파일이 있다.
+      - Google Colab으로 tracking & counting & distance estimation 했던 ipynb 파일
+      - 결과 영상 유튜브 링크가 있는 텍스트 파일
+
+  - 'yolov4_detection_deepsort' 폴더에는 detection 및 tracking을 위해 필요한 코드들이 들어있으며 아래 깃헙에서 포크해 온 후, 일부 customization 했다.
+     (https://github.com/theAIGuysCode)
+
+  - counting과 거리추정을 위한 코드는 "object_tracker_count_distance.py"를 새로 만들어 추가로 작성했으며, counting의 경우 아래 깃헙을 참고하였다. 
+     (https://github.com/emasterclassacademy)
+
+
+
+# 3. etc
+  - savepic.py : 데이터 수집 시 휴대폰 카메라를 웹캠으로 사용하여 자동으로 이미지를 저장하는 코드이다.
+                 (주의: Iriun을 쓰고 나면 이후 cv2.VideoCapture 함수 쓸 때 내 노트북의 웹캠 번호가 0이 아니라 1이 된다. Iriun을 지우면 원래대로 내 노트북의 웹캠 번호가 0으로 돌아간다)
+
+  - how_to_get_real_distance.ipynb : dist.py에서 사용하는 계수값들을 도출하는 과정에 대한 내용이다. 컨셉과 진행 프로세스, 결론으로 이루어져 있다.
+
+  - dist.py: 바운딩박스의 좌상단 x,y값, 우하단 x,y값 (0~1 사이의 값)을 input으로 하며, output으로 카메라와 객체 간 실제 거리(미터)를 반환하는 함수를 담고 있다.
